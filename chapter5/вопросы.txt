@@ -1,0 +1,6 @@
+Вопрос	Ответ
+5.1	     b) Garden.Plant plant = new Garden.Plant();
+5.2	     e) нет верного варианта
+5.3	     e) Outer.Inner e = new Inner();
+5.4    	 c) owner clazz inner method2
+5.5	     b) new Outer.Inner().i
