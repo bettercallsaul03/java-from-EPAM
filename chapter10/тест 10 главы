@@ -1,0 +1,5 @@
+Вопрос 10.1 — d) вывод выходного буфера.
+Вопрос 10.2 — e) PrintStream.
+Вопрос 10.3 — a) int number = Integer.valueOf(reader.readLine());
+Вопрос 10.4 — e) файл mail.properties будет скопирован в директорию datares.
+Вопрос 10.5 — c) ошибка компиляции в строке 1.
