@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Plane>
+
+    <Airplane>
+        <Model>Ту-154</Model>
+        <Origin>Россия</Origin>
+
+        <Chars>
+            <Type>Пассажирский</Type>
+            <CrewSeats>3</CrewSeats>
+            <Passengers>180</Passengers>
+            <LoadCapacity>39000</LoadCapacity>
+            <Radar>true</Radar>
+        </Chars>
+
+        <Parameters>
+            <Length>47.9</Length>
+            <Width>37.5</Width>
+            <Height>11.4</Height>
+        </Parameters>
+
+        <Price>50000000</Price>
+    </Airplane>
+
+    <Airplane>
+        <Model>Ил-76</Model>
+        <Origin>Россия</Origin>
+
+        <Chars>
+            <Type>Грузовой</Type>
+            <CrewSeats>5</CrewSeats>
+            <Passengers>140</Passengers>
+            <LoadCapacity>60000</LoadCapacity>
+            <Radar>true</Radar>
+        </Chars>
+
+        <Parameters>
+            <Length>46.6</Length>
+            <Width>50.5</Width>
+            <Height>14.8</Height>
+        </Parameters>
+
+        <Price>65000000</Price>
+    </Airplane>
+
+    <Airplane>
+        <Model>Бе-200</Model>
+        <Origin>Россия</Origin>
+
+        <Chars>
+            <Type>Пожарный</Type>
+            <CrewSeats>2</CrewSeats>
+            <Passengers>72</Passengers>
+            <LoadCapacity>12000</LoadCapacity>
+            <Radar>true</Radar>
+        </Chars>
+
+        <Parameters>
+            <Length>32.0</Length>
+            <Width>32.8</Width>
+            <Height>8.9</Height>
+        </Parameters>
+
+        <Price>35000000</Price>
+    </Airplane>
+
+</Plane>
