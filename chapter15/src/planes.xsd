@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Plane">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="Airplane" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="Model" type="xs:string"/>
+
+                            <xs:element name="Origin" type="xs:string"/>
+
+                            <xs:element name="Chars">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="Type">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Пассажирский"/>
+                                                    <xs:enumeration value="Грузовой"/>
+                                                    <xs:enumeration value="Пожарный"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                        <xs:element name="CrewSeats" type="xs:int"/>
+                                        <xs:element name="Passengers" type="xs:int"/>
+                                        <xs:element name="LoadCapacity" type="xs:int"/>
+                                        <xs:element name="Radar" type="xs:boolean"/>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="Parameters">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Length" type="xs:double"/>
+                                        <xs:element name="Width" type="xs:double"/>
+                                        <xs:element name="Height" type="xs:double"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="Price" type="xs:int"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
