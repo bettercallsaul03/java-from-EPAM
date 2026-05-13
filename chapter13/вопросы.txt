@@ -1,0 +1,37 @@
+1. JDBC это API для работы с базами данных в Java. Основные компоненты DriverManager, Connection, Statement, PreparedStatement, ResultSet. Альтернативы Hibernate, JPA, Spring Data.
+
+2. DriverManager получает Connection, затем создается Statement, выполняется запрос, возвращается ResultSet, потом все закрывается. Драйвер это реализация работы с конкретной БД. Загружается автоматически или через Class.forName.
+
+3. Connection закрывается через close или try with resources.
+
+4. Типы драйверов JDBC ODBC, native API, network protocol, thin driver.
+
+5. Statement выполняет SQL напрямую. PreparedStatement заранее компилируется и быстрее и безопаснее. Запрос хранится в БД в подготовленном виде. Statement не равен PreparedStatement.
+
+6. Statement не защищен от SQL injection. PreparedStatement защищен. Несколько Statement можно использовать от одного Connection, но аккуратно.
+
+7. CallableStatement нужен для вызова процедур. Batch это выполнение нескольких запросов через addBatch и executeBatch.
+
+8. executeQuery возвращает ResultSet, executeUpdate возвращает количество измененных строк.
+
+9. ResultSet хранит результат SQL запроса.
+
+10. Scrollable можно двигаться вперед и назад. Updatable можно менять данные.
+
+11. Через параметры Statement. Да можно через updateRow.
+
+12. previous. Не всегда работает зависит от типа ResultSet.
+
+13. Через getGeneratedKeys.
+
+14. Через ResultSetMetaData.
+
+15. Транзакция это группа операций. commit подтверждает rollback отменяет. По умолчанию autocommit включен.
+
+16. Savepoint это точка отката. rollback к savepoint.
+
+17. Пул соединений это переиспользование Connection для скорости.
+
+18. Метаданные это информация о структуре БД и таблиц.
+
+19. Уровни изоляции READ COMMITTED REPEATABLE READ SERIALIZABLE задаются через setTransactionIsolation.
