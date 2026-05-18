@@ -1,3 +1,8 @@
+/*
+8. Клиент выбирает изображение из списка и пересылает его другому клиенту 
+через сервер. 
+*/ 
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
