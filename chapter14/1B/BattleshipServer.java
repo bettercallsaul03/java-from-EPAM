@@ -1,3 +1,7 @@
+/*. Игра по сети в «Морской бой». */
+
+
+
 import java.net.ServerSocket;
 import java.net.Socket;
 
